@@ -1,0 +1,1 @@
+<footer class="container">WCPSS - Office of Geospatial Analytics <?php echo "\u{00A9}".date("Y"); ?></footer>

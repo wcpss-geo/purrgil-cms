@@ -1,0 +1,5 @@
+page,page_display_name,page_category,page_type,path,description,active,a_target
+example1,Example 1,External Application,redirect,https://www.wcpss.net/,Example redirect page,1,target
+docs,Documentation,Supporting Resources,page,,Documentation and guides on how to use the Daily Crowding Dashboard,1,self
+changelog,Changelog,Supporting Resources,page,,History of changes made to the Daily Crowding Dashboard,1,self
+template,Template,Dev Resources,page,,Template for creating new pages,1,self
