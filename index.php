@@ -50,15 +50,15 @@
         foreach($page_categories as $pc) {
             echo "<h2>$pc</h2>";
             $html = "<ul>";
-            foreach($pages as $p) {
-                if ($p['active'] == 1 && $p['page_category'] == $pc) {
+            foreach($pages as $page) {
+                if ($page['active'] == 1 && $page['page_category'] == $pc) {
 
-                    $target = "pages/".$p['page']."/index.php";
-                    if ($p['page_type'] == "redirect") {
-                        $target = "redirect.php?redirect_url=".$p['path'];
-                    }
-
-                    $html .= "<li><b><a href=".$target." target='_".$p['a_target']."'>".$p['page_display_name']."</a> - </b>".$p['description']."</li>";
+                    // $target = "pages/".$p['page']."/index.php";
+                    // if ($p['page_type'] == "redirect") {
+                    //     $target = "redirect.php?redirect_url=".$p['path'];
+                    // }
+                    $p_route = "?p=".$page['page'];
+                    $html .= "<li><b><a href=".$p_route." target='_".$page['a_target']."'>".$page['page_display_name']."</a> - </b>".$page['description']."</li>";
                 }
             }
             $html .= "</ul>";
